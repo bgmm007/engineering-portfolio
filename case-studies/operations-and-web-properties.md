@@ -6,7 +6,7 @@
 
 ## Part 1: A small fleet of production sites, one operating model
 
-I run several production web properties on Cloudflare: a personal and professional site, a music-franchise site, a publishing imprint with its application, and client work. They share one discipline rather than one codebase.
+I run several production web properties on Cloudflare: a personal and professional site, a music-franchise site, a publishing imprint with its application, and our family company's platform. They share one discipline rather than one codebase.
 
 | Property | Shape | Notes |
 |---|---|---|
@@ -24,9 +24,9 @@ What they have in common:
 
 ---
 
-## Part 2: Field-service operations platform (client work)
+## Part 2: Florida Deep Cleaning operations platform (family business)
 
-A complete operations system for a Florida home-services company, replacing spreadsheets and text messages. It has three audiences, each with its own surface.
+A complete operations system for [Florida Deep Cleaning](https://floridadeepcleaning.com), our family's home-cleaning company in the Tampa Bay area, replacing spreadsheets and text messages. It has three audiences, each with its own surface.
 
 ```mermaid
 flowchart TB
@@ -62,7 +62,7 @@ Decisions worth noting:
 - **D1 as the only data store.** No separate cache, queue or database. All access goes through the Worker; the browser never touches the database.
 - **Two different auth models for two different people.** Office staff use password sessions (PBKDF2, session tokens stored only as hashes, eight-hour expiry, a read-only role that blocks every non-GET request). Crew members use phone number plus PIN on a separate session table, because a crew member on a driveway does not want a password manager.
 - **Public intake is guarded, not just validated:** honeypot fields, server-side validation, a service-area gate derived from geography rather than from what the user typed, and rate limits.
-- **Estimates use public geographic data** to reflect local conditions. The pricing method itself is the client's confidential business logic and is intentionally not described here.
+- **Estimates use public geographic data** to reflect local conditions. The pricing method itself is the company's confidential business logic and is intentionally not described here.
 - **Trilingual hiring form** (English, Portuguese, Spanish) because the workforce is.
 - **Payments are scoped to what v1 needs.** The original plan listed a second processor; the build deliberately diverged, and the governing plan carries a "read this first" note recording where and why. A plan that admits it has drifted is more useful than one that pretends it has not.
 - **Separate Cloudflare account, separate repo, separate credentials** from all my other projects, by design.

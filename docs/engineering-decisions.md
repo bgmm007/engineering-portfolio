@@ -15,7 +15,7 @@ A catalogue of decisions across my projects, with the alternatives I rejected an
 | **No framework on the client** | React, Vue | No build step between source and what runs; small surface; debuggable in a browser. | Hand-rolled state handling; discipline needed in large single files. |
 | **Self-host vendor libraries and fonts** | CDN delivery | A CDN script once broke a form. A manifest with a risk rating per dependency replaced trust with inventory. | Manual updates; cache versioning rules. |
 | **Git-only deploys, CI does the shipping** | Manual `wrangler deploy` | Manual deploys ship code git does not contain and are silently overwritten by the next CI run. | Slower hot-fixes; I accept that, and preview locally. |
-| **Separate account, repo and credentials where the client differs** | One shared account | A mistake in one project cannot touch another. | More setup. |
+| **Separate account, repo and credentials where the business differs** | One shared account | A mistake in one project cannot touch another. | More setup. |
 
 ## Identity and security
 

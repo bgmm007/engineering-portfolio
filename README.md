@@ -9,7 +9,7 @@ Musician, worship theologian, author and educator, which is why the systems I bu
 
 ## In one paragraph
 
-I design, build and operate production software alone: AI-integrated SaaS, payments, private document access, operations platforms and my own AI control plane, all on Cloudflare's edge. The constraint of being the only engineer shapes everything. I choose boring infrastructure, make every failure typed and traceable, write down every decision with the alternatives that lost, and ship only through git. I came to this from twenty-plus years of music and ministry; the engineering grew out of building tools for problems I understood from the inside.
+I design, build and operate production software alone: AI-integrated SaaS, payments, private document access, an operations platform for our family's company and my own AI control plane, all on Cloudflare's edge. The constraint of being the only engineer shapes everything. I choose boring infrastructure, make every failure typed and traceable, write down every decision with the alternatives that lost, and ship only through git. I came to this from twenty-plus years of music and ministry; the engineering grew out of building tools for problems I understood from the inside.
 
 > **Short on time?** Read the [SOUND Method case study](case-studies/sound-method.md) (production, money, AI, incidents) and [How I work](docs/how-i-work.md). Ten minutes covers the whole picture.
 
@@ -22,7 +22,7 @@ flowchart TB
     subgraph Live["Live in production"]
         SM["SOUND Method<br/>AI evaluation SaaS<br/>payments, credits, admin console"]
         RR["Reading Room<br/>invitation-only manuscript access"]
-        OPS["Operations platform<br/>CRM, crew portal, estimates<br/>client work"]
+        OPS["Florida Deep Cleaning platform<br/>CRM, crew portal, estimates<br/>family business"]
         WEB["Personal and franchise sites<br/>static, git-deployed"]
         ZN["ZION<br/>private AI control plane<br/>multi-provider, budgeted, audited"]
     end
@@ -49,7 +49,7 @@ flowchart TB
 |---|---|---|---|
 | 1 | **[SOUND Method](case-studies/sound-method.md)** | System and sequence diagrams, ER model, payment webhook design, incident ledger, deploy discipline | Live beta |
 | 2 | **[ZION: a private AI control plane](case-studies/zion-control-plane.md)** | Provider abstraction, routing, spend cap, permission levels, blind model evaluation, epistemic labels | Live, single user |
-| 3 | **[Operations platform and web properties](case-studies/operations-and-web-properties.md)** | Three-audience architecture, two auth models, guarded public intake | Live, client work |
+| 3 | **[Florida Deep Cleaning platform and web properties](case-studies/operations-and-web-properties.md)** | Three-audience architecture, two auth models, guarded public intake | Live, family business |
 | 4 | **[Scholarly publishing platform (design)](case-studies/lumen-sound-platform-design.md)** | Protected decisions, verifiable peer-review badges, rules written before code | In design |
 | 5 | **[ZionCodec: audio watermark research](case-studies/zioncodec-research.md)** | A claims policy that forbids overclaiming; frozen attacks; publish-the-failures | Pre-build |
 | 6 | **[Retired, not forgotten: ZION Music](case-studies/zion-music-retired.md)** | How and why I closed an experiment on evidence | Closed Sept 2026 |
@@ -102,7 +102,7 @@ The threads I keep returning to:
 ## Background
 
 - **Education:** Berklee College of Music (music production and engineering) · M.S. in Music Technology, Indiana University · doctoral studies in Christian Worship, Liberty University
-- **Work:** Music Director for twenty-one years, touring more than twenty-five countries · adjunct faculty, Liberty University School of Music · Staff Engineer in product validation for hardware and audio systems (the same habit as my software: build the system, measure whether it behaves correctly, close the loop)
+- **Work:** Music Director for twenty-one years, touring more than twenty-five countries · adjunct faculty, Liberty University School of Music · Staff Engineer, Product Validation at Nielsen (hardware and audio systems) (the same habit as my software: build the system, measure whether it behaves correctly, close the loop)
 - **Recognition:** Latin Grammy nomination
 - **Writing:** contributing theologian, *Worship Leader* magazine · two forthcoming books from Lumen Sound Press
 - **Based in:** Tampa, Florida
